@@ -19,7 +19,7 @@ Hospital Management Staff is a Backend project have multiple Rest Api's. You can
 - Postman
 
 ## How to Use:
-- Import the project in eclipse or sts.
+- Import the project in eclipse or sts(spring tool suit).
 - update your project using alt+f5 key.
 - you have to set your own root credentials for MySQL database connectivity in application.properties 
 file under src/main/resource folder). 
@@ -35,7 +35,7 @@ file.
 if you are sending request to admin url's then you should also send username & password with the request. without username and password it will not authenticate you.(default username: 'jatin' & password: 'raju'). 
 you can change the username and password in the main file before running the project.
 **(or)**
-if you want to signup then do the following step:
+if you want to signup then do the following steps:
 - send the request to /public/signup/ with json object of user class.
 - user class has id and password properties.
 
