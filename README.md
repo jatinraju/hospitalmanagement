@@ -4,9 +4,9 @@
 	Hospital Management Staff is a Backend project have multiple Rest Api's. You can Add, fetch and update the existing data by calling api.
 
 **Technologies and Frameworks:**
-	Java
-	SpringBoot
-	MySQL
+	Java,
+	SpringBoot,
+	MySQL,
 	Postman
 
 **How to Use:**
