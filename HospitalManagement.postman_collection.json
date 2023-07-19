@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "cd2919f4-ae6a-42b1-92bb-9536467e4b57",
+		"name": "HospitalManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28227356"
+	},
+	"item": [
+		{
+			"name": "Login Check Admin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "raju",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "jatin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7070/admin/home",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"admin",
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"admin123\",\r\n    \"password\": \"admin123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7070/public/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"public",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Patient",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "raju",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "jatin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jatin Raju\",\r\n    \"age\": 24,\r\n\t\"room\":1002,\r\n\t\"doctor_name\":\"Raman Gupta\",\r\n    \"admit_date\":\"2022-07-20\",\r\n\t\"expenses\": 35500,\r\n\t\"status\":\"admitted\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7070/admin/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"admin",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Patients",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "raju",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "jatin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7070/admin/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"admin",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Discharge Patient",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "raju",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "jatin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pid\":1,\r\n\t\"status\": \"discharge\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7070/admin/discharge",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"admin",
+						"discharge"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
