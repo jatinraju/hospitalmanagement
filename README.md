@@ -31,6 +31,7 @@ file.
 	/admin/add: adding patient in database
 	/admin/getAll: getting the list of admitted patient
 	/admin/dishcarge: update the status of patient to 'discharge'.
+- you can also import the 'postman collection' in your postman.
 
 ## Note: 
 if you are sending request to admin url's then you should also send username & password with the request. without username and password it will not authenticate you.(default username: 'jatin' & password: 'raju'). 
