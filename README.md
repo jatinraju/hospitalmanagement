@@ -1,6 +1,15 @@
 # Java Assignment(Hospital Management Staff) By Jatin Raju
+## Table of Contents
 
-## About:
+- About
+- Technologies and Frameworks
+- How to Use
+- Note
+- Database Schema
+- Files Attached
+
+
+## About :
 Hospital Management Staff is a Backend project have multiple Rest Api's. You can Add, fetch and update the existing data by calling api.
 
 ## Technologies and Frameworks:
