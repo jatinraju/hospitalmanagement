@@ -21,6 +21,7 @@ Hospital Management Staff is a Backend project have multiple Rest Api's. You can
 ## How to Use:
 - Import the project in eclipse or sts(spring tool suit).
 - update your project using alt+f5 key.
+- create the database 'hospitalmng' (MySQL).
 - you have to set your own root credentials for MySQL database connectivity in application.properties 
 file under src/main/resource folder). 
 - run the main class file.
